@@ -1,2 +1,33 @@
-# SelfDRSC
-Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive
+# Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive
+---
+[[arXiv]()]
+
+This repository is the official PyTorch implementation of SelfDRSC: Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive.
+
+### Introduction
+
+
+### Examples of the Demo
+
+
+### Prerequisites
+- Python >= 3.8, PyTorch >= 1.7.0
+- Requirements: opencv-python, numpy, matplotlib, imageio, scikit-image, tqdm
+
+
+### Datasets
+
+
+## Download Pre-trained Model of SelfDRSC
+
+
+## Getting Started
+
+
+
+## Cite
+If you use any part of our code, or SelfDRSC is useful for your research, please consider citing:
+
+
+## Contact
+If you have any questions, please contact csweishang@gmail.com.
