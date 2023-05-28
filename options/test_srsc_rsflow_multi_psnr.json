@@ -1,0 +1,64 @@
+{
+  "task": "srsc_rsflow_multi_psnr"
+  , "model": "srsc_rsflow_multi"
+  , "gpu_ids": [0]   //
+  , "dist": true
+
+  , "scale": 1       // broadcast to "netG"
+  , "n_channels": 3  // broadcast to "datasets", 1 for grayscale, 3 for color
+
+  , "path": {
+    "root": "experiments"
+    , "inference_results": "experiments/srsc_rsflow_multi_psnr/inference_results"
+    , "pretrained_netG": "./experiments/srsc_rsflow_multi_psnr_205000_G.pth"
+    , "pretrained_netE": null
+    , "pretrained_rsg": "./pretrained/network-default.pytorch"
+  }
+
+  , "datasets": {
+    "test": {
+      "name": "test_dataset"            // just name
+      , "data_root": "/media/r/sw/data/GS/RS-GOPRO_DS/"  // path of H training dataset    //
+      , "future_frames": 0
+      , "past_frames": 0
+      , "frames": 9
+      , "centralize": false
+      , "normalize": true
+    }
+  }
+
+  , "netG": {
+    "net_type": "srsc_rsg"
+    , "num_frames": 3
+    , "n_feats": 32
+    , "load_flow_net": true
+    , "flow_pretrain_fn": null
+  }
+
+  , "train": {
+    "G_lossfn_type": "1*Charbonnier|1e-1*Perceptual|1e-1*Variation"   //  //"1*Charbonnier|1e-1*Perceptual"       //,
+
+    , "E_decay": 0                  // Exponential Moving Average for netG: set 0 to disable; default setting 0.999
+
+    , "G_optimizer_type": "adamw"        // fixed, adam is enough
+    , "G_optimizer_lr": 1e-4            // learning rate
+    , "G_optimizer_wd": 0               // weight decay, default 0
+    , "G_optimizer_clipgrad": 20      // unused  G_optimizer_clipgrad
+    , "G_optimizer_reuse": false
+
+    , "total_iter": 300000
+    , "G_scheduler_type": "CosineAnnealingWarmRestarts"
+    , "G_scheduler_periods": 300000
+    , "G_scheduler_eta_min": 1e-7
+
+    , "G_regularizer_orthstep": null    // unused
+    , "G_regularizer_clipstep": null    // unused
+
+    , "G_param_strict": false
+    , "E_param_strict": false
+
+    , "checkpoint_test": 5000          // for testings
+    , "checkpoint_save": 5000           // for saving model
+    , "checkpoint_print": 500         // for print
+  }
+}
