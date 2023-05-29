@@ -8,7 +8,11 @@ This repository is the official PyTorch implementation of SelfDRSC: Self-supervi
 
 
 ### Examples of the Demo
-![video](https://github.com/shangwei5/SelfDRSC/tree/main/video_results/r0.mp4)
+
+
+https://github.com/shangwei5/SelfDRSC/assets/43960503/6eda1861-219a-498a-899e-3c844e047ca9
+
+
 
 ### Prerequisites
 - Python >= 3.8, PyTorch >= 1.7.0
