@@ -42,14 +42,14 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=1234 main_te
 Please change `data_root` and `pretrained_netG` in options according to yours.
 
 ### 2) Training
-1.Training the first stage:
+1.Training the first stage: (8 GPUs)
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --master_port=1234 main_train_srsc_rsflow_multi.py --opt options/train_srsc_rsflow_multi_psnr.json --dist True
 ```
 Please change `data_root` and `pretrained_rsg` in options according to yours.
 
 
-2.Training the second stage (adding self-distillation):
+2.Training the second stage (adding self-distillation): (8 GPUs)
 ```
 python -m torch.distributed.launch --nproc_per_node=8 --master_port=1234 main_train_srsc_rsflow_multi_distillv2.py --opt options/train_srsc_rsflow_multi_distillv2_psnr.json  --dist True
 ```
