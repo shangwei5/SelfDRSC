@@ -16,6 +16,7 @@ This repository is the official PyTorch implementation of SelfDRSC: Self-supervi
 
 
 ### Datasets
+Please download the GoPro datasets from [link](https://drive.google.com/u/0/uc?id=1DuJphkVpvsNjgPs73y_sm4WZ8tzfxOZf&export=download)
 
 
 ## Download Pre-trained Model of SelfDRSC
