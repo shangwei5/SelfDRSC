@@ -68,3 +68,6 @@ If you use any part of our code, or SelfDRSC is useful for your research, please
 
 ## Contact
 If you have any questions, please contact csweishang@gmail.com.
+
+## Acknowledgements
+This code is built on [IFED](https://github.com/zzh-tech/Dual-Reversed-RS). We thank the authors for sharing the codes.
