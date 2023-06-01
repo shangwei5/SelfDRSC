@@ -57,7 +57,14 @@ Please change `data_root`, `pretrained_rsg` and `pretrained_netG` in options acc
 
 ## Cite
 If you use any part of our code, or SelfDRSC is useful for your research, please consider citing:
-
+```
+@article{shang2023selfsupervised,
+  title={Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive}, 
+  author={Wei Shang and Dongwei Ren and Chaoyu Feng and Xiaotao Wang and Lei Lei and Wangmeng Zuo},
+  journal={arXiv preprint arXiv:2305.19862},
+  year={2023}
+}
+```
 
 ## Contact
 If you have any questions, please contact csweishang@gmail.com.
