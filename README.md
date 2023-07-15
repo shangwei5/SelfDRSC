@@ -1,4 +1,4 @@
-# Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive
+# Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive (ICCV2023)
 ---
 [[arXiv](https://arxiv.org/abs/2305.19862)]
 
