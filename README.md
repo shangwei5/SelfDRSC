@@ -20,8 +20,51 @@ https://github.com/shangwei5/SelfDRSC/assets/43960503/89eecc98-7305-4b81-99b7-43
 
 
 ### Datasets
-Please download the RS-GOPRO datasets from [link](https://drive.google.com/u/0/uc?id=1DuJphkVpvsNjgPs73y_sm4WZ8tzfxOZf&export=download).
+Please download the RS-GOPRO datasets from [GoogleDrive](https://drive.google.com/file/d/1Txq0tU-1r3T2TjN-DQIe7YHyqwv9rCma/view) or [BaiduDisk](https://pan.baidu.com/s/1LNjrFYJJAUgt3H4ZUumOJw?pwd=vsad)(password: vsad).
 
+## Dataset Organization Form
+```
+|--dataset
+    |--train  
+        |--video 1
+            |--GS
+                |--frame 1
+                |--frame 2
+                    ：
+            |--RS
+                |--frame 1
+                |--frame 2
+                    ： 
+        |--video 2
+            :
+        |--video n
+    |--valid
+        |--video 1
+            |--GS
+                |--frame 1
+                |--frame 2
+                    ：
+            |--RS
+                |--frame 1
+                |--frame 2
+                    ：   
+        |--video 2
+         :
+        |--video n
+    |--test
+        |--video 1
+            |--GS
+                |--frame 1
+                |--frame 2
+                    ：
+            |--RS
+                |--frame 1
+                |--frame 2
+                    ：   
+        |--video 2
+         :
+        |--video n
+```
 
 ## Download Pre-trained Model of SelfDRSC
 Please download the pre-trained pwcnet from [link](https://pan.baidu.com/s/12gnAdEaJb1a_MaBuWhqPLg?pwd=pjdx)(password:pjdx). Please put these models to `./pretrained`.
