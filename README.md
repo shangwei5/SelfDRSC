@@ -1,6 +1,6 @@
 # Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive (ICCV2023)
 ---
-[[arXiv](https://arxiv.org/abs/2305.19862)]
+[[arXiv](https://arxiv.org/abs/2305.19862)] [[PDF](https://openaccess.thecvf.com/content/ICCV2023/papers/Shang_Self-supervised_Learning_to_Bring_Dual_Reversed_Rolling_Shutter_Images_Alive_ICCV_2023_paper.pdf)]
 
 This repository is the official PyTorch implementation of SelfDRSC: Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive.
 We also provide an implementation in HUAWEI Mindspore at [Mindspore](https://github.com/Hunter-Will/SelfDRSC-mindspore). 
@@ -102,10 +102,11 @@ Please change `data_root`, `pretrained_rsg` and `pretrained_netG` in options acc
 ## Cite
 If you use any part of our code, or SelfDRSC is useful for your research, please consider citing:
 ```
-@article{shang2023selfsupervised,
-  title={Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive}, 
-  author={Wei Shang and Dongwei Ren and Chaoyu Feng and Xiaotao Wang and Lei Lei and Wangmeng Zuo},
-  journal={arXiv preprint arXiv:2305.19862},
+@inproceedings{shang2023self,
+  title={Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive},
+  author={Shang, Wei and Ren, Dongwei and Feng, Chaoyu and Wang, Xiaotao and Lei, Lei and Zuo, Wangmeng},
+  booktitle={IEEE International Conference on Computer Vision},
+  pages={13086--13094},
   year={2023}
 }
 ```
