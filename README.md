@@ -105,7 +105,7 @@ If you use any part of our code, or SelfDRSC is useful for your research, please
 @inproceedings{shang2023self,
   title={Self-supervised Learning to Bring Dual Reversed Rolling Shutter Images Alive},
   author={Shang, Wei and Ren, Dongwei and Feng, Chaoyu and Wang, Xiaotao and Lei, Lei and Zuo, Wangmeng},
-  booktitle={IEEE International Conference on Computer Vision},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
   pages={13086--13094},
   year={2023}
 }
