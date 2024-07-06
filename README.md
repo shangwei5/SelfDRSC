@@ -79,7 +79,7 @@ python -m torch.distributed.launch --nproc_per_node=1 --master_port=1234 main_te
 ```
 Please change `data_root` and `pretrained_netG` in options according to yours.
 
-1.Testing on real RS data:
+2.Testing on real RS data:
 ```
 python -m torch.distributed.launch --nproc_per_node=1 --master_port=1234 main_test_srsc_rsflow_multi_distillv2_real.py --opt options/test_srsc_rsflow_multi_distillv2_real.json  --dist True
 ```
