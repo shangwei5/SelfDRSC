@@ -71,6 +71,8 @@ Please download the pre-trained pwcnet from [link](https://pan.baidu.com/s/12gnA
 
 Please download the pre-trained checkpoints from [Stage one](https://pan.baidu.com/s/1rEteKQfOY5St_2vfKNJC2w?pwd=42ep)(password:42ep) and [Stage two](https://pan.baidu.com/s/19EeZ38wTVjZB7pX920bIig?pwd=9w64)(password:9w64). Please put these models to `./experiments`.
 
+All models can also be downloaded from [GoogleDrive](https://drive.google.com/drive/folders/1t37HOPcSIIBN0UQaxgZP6dwyabytownT?usp=sharing).
+
 ## Getting Started
 ### 1) Testing
 1.Testing on RS-GOPRO dataset:
